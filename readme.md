@@ -1,3 +1,18 @@
+1) Configurar variavel ambiente:
+Windows: python -m venv chatdoc
+Mac/Linux: python3 -m venv chatdoc
+
+2) Ativar o ambiente virtual criado do diretório .venv
+Windows: chatdoc\Scripts\activate
+Mac/Linux: source chatdoc/bin/activate
+
+3) Verifica pacotes instalados
+pip list
+
+4) Instalar as dependências
+pip install -r requirements.txt
+
+
 Melhorias
 
 1) Implementar botão para Limpar Historico ou Resetar a página.
