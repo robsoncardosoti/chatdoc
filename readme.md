@@ -18,6 +18,8 @@
 ## Instalar as dependências
 *pip install -r requirements.txt*
 
+## Executar aplicação
+*streamlit run chat_doc.py*
 
 # Melhorias
 1) Implementar botão para Limpar Historico ou Resetar a página.

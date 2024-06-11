@@ -1,22 +1,23 @@
 streamlit==1.31.0
-python-dotenv==1.0.0
-pillow==10.3.0
-#torch==2.3.0   #pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu124
-huggingface-hub==0.23.0
-PyMuPDF==1.22.5
-docarray~=0.37.0
-openai~=0.27.8
-llama-cpp-python~=0.2.76
-tiktoken==0.4.0
-langchain_text_splitters
-bitsandbytes   #pip install bitsandbytes-cuda113
-langchain_community==0.2.1
-langchain==0.0.278  #0.1.12
-gpt4all
+langchain==0.2.1
+langchain-community==0.2.1
+python-dotenv==1.0.1
+#torch==2.3.0   #Para uso com CUDA utilizar: pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu124
+PyPDF2==3.0.1
+sentence_transformers==3.0.0  #2.7.0
+faiss-cpu
+llama-cpp-python~=0.2.76 -C cmake.args="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1  #Linux: CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install  llama-cpp-python   #Windows: $env:CMAKE_ARGS = "-DLLAMA_CUBLAS=ON" FORCE_CMAKE=1 pip install llama-cpp-python
+PyMuPDF
+########################### Acessórios ########################
+langchain-huggingface==0.0.3
+langchain_experimental
+tiktoken
+llama_index
+langchain_openai
+#ctransformers[cuda]
+#pillow==10.3.0
+#huggingface-hub==0.23.0
+#PyMuPDF==1.22.5
+#docarray~=0.37.0
+#openai~=0.27.8
 
-#auto-gptq==0.3.2
-#pdfminer.six
-#sentence_transformers0=2.7.0
-
-#CUDA_LAUNCH_BLOCKING=1.
-#`TORCH_USE_CUDA_DSA`
